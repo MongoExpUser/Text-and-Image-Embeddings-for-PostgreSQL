@@ -11,7 +11,7 @@
 # *                                                                                                                                    *
 # *   This script implements a class for generating text and image embeddings                                                          *
 # *                                                                                                                                    *
-# *   The following 3rd party libraries are used: (1) sentence transformers (2) imgbeddings and 3 Pillows (PIL)                        *
+# *   The following 3rd party libraries are used: (1) sentence-transformers (2) imgbeddings and (3) Pillows (PIL)                        *
 # *                                                                                                                                    *
 # *                                                                                                                                    *
 # *                                                                                                                                    *
