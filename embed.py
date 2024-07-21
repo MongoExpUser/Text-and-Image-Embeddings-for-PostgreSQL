@@ -34,6 +34,7 @@ class CreateEmbedding():
         """
             Create text or image embeddings, which are a numerical representation of text or images, encoded into vector representation.
             The created text and image vectors can be inserted into the vector columms of PostgreSQL or other database engines that support vector column.
+            The vector dimension (D) can also be processed & re-sized from the output dimension of 768 to lower values (say, 32 64, 128, etc.) before inserting into table.
         """
         print("Creating Embedding")
 
@@ -46,8 +47,8 @@ class CreateEmbedding():
             model = SentenceTransformer(model_name)     
             embedding = model.encode([text_to_embed]) 
             self.show_result(embedding=embedding, show=show)
-            return  embedding # This vector can be inserted into a vector columm of a PostgreSQL table
-
+            return  embedding 
+            
     def create_image_embedding(self, local_image_path=None, remote_image_url=None, model_name=None, show=None):
         image = None
         embedding = None
@@ -72,8 +73,7 @@ class CreateEmbedding():
             embedding = model.to_embeddings(image)
 
         self.show_result(embedding=embedding, show=show)
-        return  embedding # This vector can be inserted into a vector columm of a PostgreSQL table
-
+        return  embedding 
 
 def main():
     cemd = CreateEmbedding()
