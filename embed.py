@@ -51,19 +51,19 @@ class CreateEmbedding():
 
     def create_image_embedding(self, local_image_path=None, remote_image_url=None, model_name=None, show=None):
         image = None
+        embedding = None
+        
         if local_image_path:
-            image_path = local_image_path
-            image = image_path
+            image = local_image_path
         elif remote_image_url:
             print("Downloading Image")
             system(f"sudo wget {remote_image_url}")
             url = urlparse(remote_image_url)
             image_path = url.path
             image = basename(image_path)
-            pprint({ "Image-File-Name" : image } )
-
+       
+        pprint({ "Image-File-Name" : image } )
         print("Creating Embedding")
-        embedding = None
 
         if model_name == "clip-ViT-B-32":
             model = SentenceTransformer(model_name) 
