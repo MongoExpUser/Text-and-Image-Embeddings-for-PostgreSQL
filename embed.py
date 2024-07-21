@@ -30,7 +30,7 @@ class CreateEmbedding():
     def __init__(self):
 
         """
-            Create text or image embeddings, which are a numerical representation of text or images, encoded into vector representation.
+            Create text and image embeddings, which are a numerical representation of text or images, encoded into vector representation.
             The created text and image vectors can be inserted into the vector columms of PostgreSQL or other database engines that support vector column.
             The vector dimension (D) can also be processed & re-sized from the output dimension of 768 to lower values (say, 32 64, 128, etc.) before inserting into table.
         """
