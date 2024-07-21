@@ -1,4 +1,4 @@
--- create extenstion
+-- extenstion
 CREATE EXTENSION IF NOT EXISTS vector;
 
 -- schema
