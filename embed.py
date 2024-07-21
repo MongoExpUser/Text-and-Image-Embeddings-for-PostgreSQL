@@ -50,8 +50,10 @@ class CreateEmbedding():
             return  embedding # This vector can be inserted into a vector columm of a PostgreSQL table
 
     def create_image_embedding(self, local_image_path=None, remote_image_url=None, model_name=None, show=None):
+        image = None
         if local_image_path:
             image_path = local_image_path
+            image = image_path
         elif remote_image_url:
             print("Downloading Image")
             system(f"sudo wget {remote_image_url}")
