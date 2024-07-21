@@ -24,7 +24,7 @@ from pprint import pprint
 from os.path import basename
 from urllib.parse import urlparse
 from imgbeddings import imgbeddings
-from sentence_transformers import SentenceTransformer, util
+from sentence_transformers import SentenceTransformer
 
 
 class CreateEmbedding():
