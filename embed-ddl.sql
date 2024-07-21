@@ -1,3 +1,6 @@
+-- create extenstion
+CREATE EXTENSION IF NOT EXISTS vector;
+
 -- schema
 CREATE SCHEMA IF NOT EXISTS vsearch AUTHORIZATION postgres;
 
