@@ -85,7 +85,7 @@ def main():
 
     if test_text_embedding:
         model_name = "clip-ViT-B-32"
-        text_to_embed = "How do we create embedding for PostgreSQL?"
+        text_to_embed = "What is Pgvector Embedding?"
         cemd.create_text_embedding(text_to_embed=text_to_embed, model_name=model_name, show=show)
 
     if test_image_embedding:
