@@ -1,8 +1,8 @@
 ## Generate-Text-and-Image-Embeddings-for-PostgreSQL-Vector-Column
 
 
-### Generate Text  and I mage Embeddlings.
-  The  embeddings can be inserted into the vector columms of:
+### Generate Text  and Image Embeddlings.
+  The  embeddings can be inserted into the vector columns of:
   1) PostgreSQL's tables  (The PostgreSQL instance must have Pgvector extension installed on it).
   2) Tables of other database engines that support a vector column.
 
