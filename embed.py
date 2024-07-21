@@ -34,7 +34,7 @@ class CreateEmbedding():
 
         """
             Create text or image embeddings, which are a numerical representation of text or images, encoded into vector representation.
-            The created text and image vectors can be inserted into the vector columms of PostgreSQL or database engines.
+            The created text and image vectors can be inserted into the vector columms of PostgreSQL or other database engines that support vector column.
         """
         print("Creating Embedding")
 
