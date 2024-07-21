@@ -40,7 +40,7 @@ class CreateEmbedding():
 
     def show_result(self, embedding=None, show=None):
         if show:
-            pprint( { "embedding_sent_trans" : embedding } )
+            pprint( { "embedding" : embedding } )
 
     def create_text_embedding(self, text_to_embed=None, model_name=None, show=None):
         if model_name == "clip-ViT-B-32":
