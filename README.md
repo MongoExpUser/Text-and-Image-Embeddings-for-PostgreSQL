@@ -19,3 +19,11 @@ Sentence Transformers v3.0.1 (https://pypi.org/project/sentence-transformers/)
 Imgbeddings v0.1.0 (https://pypi.org/project/imgbeddings/)
 
 Pillows (PIL) v10.2.0 (https://pypi.org/project/pillow/)
+
+
+#
+# License
+
+Copyright © 2024. MongoExpUser
+
+Licensed under the MIT license.
