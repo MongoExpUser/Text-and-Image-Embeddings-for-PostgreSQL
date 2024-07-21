@@ -13,8 +13,6 @@
 # *                                                                                                                                    *
 # *   The following 3rd party libraries are used: (1) sentence-transformers (2) imgbeddings and (3) Pillows (PIL)                      *
 # *                                                                                                                                    *
-# *                                                                                                                                    *
-# *                                                                                                                                    *
 # **************************************************************************************************************************************
 
 
