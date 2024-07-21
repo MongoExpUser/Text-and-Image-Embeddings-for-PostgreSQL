@@ -45,8 +45,9 @@ class CreateEmbedding():
     def create_text_embedding(self, text_to_embed=None, model_name=None, show=None):
         if model_name == "clip-ViT-B-32":
             model = SentenceTransformer(model_name)     
-            embedding = model.encode([text_to_embed])  # This vector can be inserted into a vector columm of a PostgreSQL table
+            embedding = model.encode([text_to_embed]) 
             self.show_result(embedding=embedding, show=show)
+            return  embedding # This vector can be inserted into a vector columm of a PostgreSQL table
 
     def create_image_embedding(self, local_image_path=None, remote_image_url=None, model_name=None, show=None):
         if local_image_path:
