@@ -1,8 +1,8 @@
 -- image table
 CREATE TABLE IF NOT EXISTS public.images (
   id INTEGER PRIMARY KEY NOT NULL GENERATED ALWAYS AS IDENTITY,
-  image_filename VARCHAR(20) NOT NULL,
-  image_label VARCHAR(20) NOT NULL,
+  image_filename VARCHAR(15) NOT NULL,
+  image_label VARCHAR(10) NOT NULL,
   image_embedding VECTOR(128) NOT NULL
 );
 
