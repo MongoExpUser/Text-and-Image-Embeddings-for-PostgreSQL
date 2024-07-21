@@ -18,7 +18,6 @@
 # **************************************************************************************************************************************
 
 
-import requests
 from PIL import Image
 from os import system
 from pprint import pprint
