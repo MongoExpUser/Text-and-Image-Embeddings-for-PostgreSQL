@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS vsearch.images (
   id INTEGER PRIMARY KEY NOT NULL GENERATED ALWAYS AS IDENTITY,
   image_filename VARCHAR(15) NOT NULL,
   image_label VARCHAR(10) NOT NULL,
-  image_embedding VECTOR(128) NOT NULL
+  image_embedding VECTOR(128) NOT NULL -- note: dimension is 128
 );
 CREATE INDEX IF NOT EXISTS image_embedding_idx ON vsearch.images USING hnsw (image_embedding vector_cosine_ops);
 
@@ -19,6 +19,6 @@ DROP TABLE IF EXISTS vsearch.text CASCADE;
 CREATE TABLE IF NOT EXISTS vsearch.text (
   id INTEGER PRIMARY KEY NOT NULL GENERATED ALWAYS AS IDENTITY,
   createdon TIMESTAMP NOT NULL, 
-  text_embedding VECTOR(32) NOT NULL
+  text_embedding VECTOR(32) NOT NULL -- note: dimension is 32
 );
 CREATE INDEX IF NOT EXISTS text_embedding_idx ON vsearch.text USING hnsw (text_embedding vector_cosine_ops);
