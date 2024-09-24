@@ -21,6 +21,7 @@ Imgbeddings v0.1.0 (https://pypi.org/project/imgbeddings/)
 Pillows (PIL) v10.2.0 (https://pypi.org/project/pillow/)
 
 
+
 #
 # License
 
